@@ -2,9 +2,24 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>fatima-Testtttt</title>
+		<title>aframe-world-fatima-Testtttt</title>
 		<script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
 		<script src="https://unpkg.com/@softeng-761-2025-team-10/aframe-inspector/dist/aframe-inspector.min.js"></script>
+		{{permissionScript}}
 	</head>
-	<body></body>
+	<body>
+		<a-scene>
+			<!-- User entities -->
+			      <a-sky src="#img-1771816397937" id="A-SKY-2" scale="-1 1 1" material="alphaTest: 0; depthTest: true; depthWrite: true; flatShading: false; npot: true; offset: [object Object]; opacity: 1; repeat: [object Object]; shader: flat; side: back; transparent: false; vertexColorsEnabled: false; visible: true; blending: normal; dithering: true; anisotropy: 0; color: #FFF; fog: true; wireframe: false; wireframeLinewidth: 2; toneMapped: true" geometry="buffer: true; primitive: sphere; skipCache: false; radius: 500; phiLength: 360; phiStart: 0; thetaLength: 180; thetaStart: 0; segmentsHeight: 32; segmentsWidth: 64"></a-sky>
+			<a-plane
+				id="ground"
+				position="0 0 -4"
+				rotation="-90 0 0"
+				width="4"
+				height="4"
+				color="#7BC8A4"
+			></a-plane>
+			<a-sky id="sky" color="#ECECEC"></a-sky>
+		</a-scene>
+	</body>
 </html>
